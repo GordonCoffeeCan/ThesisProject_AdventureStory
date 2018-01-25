@@ -18,8 +18,6 @@ public class TowerShootAI : MonoBehaviour {
     [SerializeField]
     private Collider poleCollider;
     [SerializeField]
-    private List<MultiplayerPlayerManager> players;
-    [SerializeField]
     private TowerStoneScript stone;
     private SphereCollider trigger;
     private float currentIntervalTimer;
@@ -27,7 +25,6 @@ public class TowerShootAI : MonoBehaviour {
     private const string PLAYER_TAG = "Player";
 
     private void Awake() {
-        players = new List<MultiplayerPlayerManager>();
         trigger = this.GetComponent<SphereCollider>();
         trigger.radius = attackRange;
         if (!trigger.isTrigger) {
@@ -59,26 +56,7 @@ public class TowerShootAI : MonoBehaviour {
 	}
 
     private void AttackPlayer() {
-        for (int i = 0; i < players.Count; i++) {
-            if (Vector3.Distance(players[i].transform.position, firePoint.position) <= attackRange) {
-                if(i == 0) {
-                    RaycastHit _hit;
-                    Vector3 _dir = new Vector3(players[i].transform.position.x, players[i].transform.position.y + 1.5f, players[i].transform.position.z) - firePoint.position;
-                    _dir.Normalize();
-
-                    Debug.DrawRay(firePoint.position, _dir * (new Vector3(players[i].transform.position.x, players[i].transform.position.y + 1.5f, players[i].transform.position.z) - firePoint.position).magnitude, Color.yellow, 0.5f);
-                    /*If raycast reaches the player, tower will throw stone to the player. 
-                    If there is other object between the tower firepoint and the player, raycast cannot reach to the player,
-                    so that tower will not throw stone to the object in between; */
-                    if (Physics.Raycast(firePoint.position, _dir, out _hit, attackRange, layerMask)) {
-                        if(_hit.collider.tag == PLAYER_TAG) {
-                            ShootStone(_dir);
-                        }
-                        Debug.Log(_hit.collider.tag == PLAYER_TAG);
-                    }
-                }
-            }
-        }
+        
     }
 
     private void ShootStone(Vector3 _dir) {
@@ -94,15 +72,13 @@ public class TowerShootAI : MonoBehaviour {
 
     private void OnTriggerEnter(Collider _col) {
         if (_col.tag == PLAYER_TAG) {
-            MultiplayerPlayerManager _player = _col.GetComponent<MultiplayerPlayerManager>();
-            players.Add(_player);
+
         }
     }
 
     private void OnTriggerExit(Collider _col) {
         if (_col.tag == PLAYER_TAG) {
-            MultiplayerPlayerManager _player = _col.GetComponent<MultiplayerPlayerManager>();
-            players.Remove(_player);
+
         }
     }
 }

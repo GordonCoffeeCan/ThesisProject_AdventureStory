@@ -62,7 +62,7 @@ public class PlayerController : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         //If in Game menu panel is on, player cannot be controlled;
-        if (MultiplayerUIManager.isMenuPanelOn) {
+        if (UIManager.isMenuPanelOn) {
             return;
         }
         if (isAbleToMove) {
@@ -230,6 +230,6 @@ public class PlayerController : MonoBehaviour {
     }
 
     private void SprintLevel() {
-        MultiplayerGameManager.instance.staminaLevel = sprintTime / sprintTimeLimit;
+        GameManager.instance.staminaLevel = sprintTime / sprintTimeLimit;
     }
 }

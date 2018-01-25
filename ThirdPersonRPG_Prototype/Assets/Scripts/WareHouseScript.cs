@@ -1,10 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Networking;
-using UnityEngine.UI;
 
-public class WareHouseScript : NetworkBehaviour {
+public class WareHouseScript : MonoBehaviour {
 
 
 	// Use this for initialization
@@ -19,26 +17,7 @@ public class WareHouseScript : NetworkBehaviour {
 
     private void OnTriggerEnter(Collider _col) {
         if (_col.tag == "Player") {
-            string _playerName = _col.transform.name;
-            MultiplayerPlayerManager _player = MultiplayerGameManager.GetPlayer(_playerName);
-            if (_player.hasCargo == true) {
-                CmdDestroyCargo(_playerName);
-                
-                
-            }
-        }
-    }
-    
-    [Command]
-    private void CmdDestroyCargo(string _playerName) {
-        MultiplayerPlayerManager _player = MultiplayerGameManager.GetPlayer(_playerName);
-        RpcStealCargo();
-        _player.RpcDestroyCargo();
-       
-    }
 
-    [ClientRpc]
-    void RpcStealCargo() {
-        MultiplayerGameManager.instance.cargoesStolen++;
+        }
     }
 }

@@ -25,9 +25,6 @@ public class TowerStoneScript : MonoBehaviour{
 
     private void OnCollisionEnter(Collision _col) {
         if (_col.gameObject.tag == PLAYER_TAG) {
-            Debug.Log("Hit Player!");
-            MultiplayerShoot _shot = _col.gameObject.GetComponent<MultiplayerShoot>();
-            _shot.AIHitPlayer(_col.gameObject.name, damage);
 
             
         }

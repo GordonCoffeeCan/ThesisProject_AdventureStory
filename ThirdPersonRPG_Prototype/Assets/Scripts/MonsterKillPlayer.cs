@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class MonsterKillPlayer : MonoBehaviour {
 
-    [SerializeField]
-    private MultiplayerEnemyAI parent;
-
 	// Use this for initialization
 	void Start () {
 		
@@ -18,8 +15,6 @@ public class MonsterKillPlayer : MonoBehaviour {
 	}
 
     private void OnTriggerEnter(Collider _col) {
-        if (_col.tag == "Player") {
-            parent.CmdPlayerDie(_col.transform.name, 1000);
-        }
+
     }
 }

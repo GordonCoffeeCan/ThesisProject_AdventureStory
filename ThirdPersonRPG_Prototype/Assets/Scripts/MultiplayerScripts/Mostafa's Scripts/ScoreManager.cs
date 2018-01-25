@@ -32,7 +32,7 @@ public class ScoreManager : NetworkBehaviour {
 
         CmdScore();
 
-        individualScore = MultiplayerGameManager.instance.playerScore;
+        individualScore = GameManager.instance.playerScore;
 
         individiualScoreText.text = "you scored " + individualScore.ToString() + " points";
 

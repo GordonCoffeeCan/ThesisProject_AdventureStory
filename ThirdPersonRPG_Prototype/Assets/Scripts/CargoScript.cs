@@ -1,9 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Networking;
 
-public class CargoScript : NetworkBehaviour {
+public class CargoScript : MonoBehaviour {
     public Vector3 originalPosition;
 
     public Collider objectTrigger;
@@ -20,24 +19,7 @@ public class CargoScript : NetworkBehaviour {
 
     private void OnTriggerEnter(Collider _col) {
         if(_col.tag == "Player") {
-            string _playerName = _col.transform.name;
-            MultiplayerPlayerManager _player = _col.GetComponent<MultiplayerPlayerManager>();
-            if (_player.hasCargo == false) {
-                CmdTakeCargo(_playerName);
-                _player.hasCargo = true;
-            }
+
         }
-    }
-
-    [Command]
-    private void CmdTakeCargo(string _playerName) {
-        MultiplayerPlayerManager _player = MultiplayerGameManager.GetPlayer(_playerName);
-        _player.RpcTakeCargo(this.transform.name);
-        RpcDeactivateObject();
-    }
-
-    [ClientRpc]
-    public void RpcDeactivateObject() {
-        this.gameObject.SetActive(false);
     }
 }
