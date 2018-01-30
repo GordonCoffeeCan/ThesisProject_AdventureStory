@@ -104,13 +104,16 @@ public class PlayerAnimation : MonoBehaviour {
         //Only idle state will trigger jump action when press jump button;
 
         if (!playerAnimator.IsInTransition(0) && currentAnimatorState.fullPathHash != fallingToRunningState) {
-            if (MobileInputManager.instance.isGamepadConnected == false) {
+            /*if (MobileInputManager.instance.isGamepadConnected == false) {
 
             }
             else {
                 playerAnimator.SetBool("Jump", ControllerManager.instance.OnJump());
                 playerController.toggleJump = ControllerManager.instance.OnJump();
-            }
+            }*/
+
+            playerAnimator.SetBool("Jump", ControllerManager.instance.OnJump());
+            playerController.toggleJump = ControllerManager.instance.OnJump();
         }
 
 

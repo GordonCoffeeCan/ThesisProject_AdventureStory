@@ -74,11 +74,14 @@ public class PlayerController : MonoBehaviour {
 
     private void MoveCharacter() {
 
-        if (MobileInputManager.instance.isGamepadConnected == false) {
+        /*if (MobileInputManager.instance.isGamepadConnected == false) {
             moveDirection = MobileInputManager.instance.OnJoystickMove();
         } else {
             moveDirection = ControllerManager.instance.OnMove();
-        }
+        }*/
+
+        moveDirection = ControllerManager.instance.OnMove();
+
         moveDirection = playerCamera.transform.TransformDirection(moveDirection);
         moveDirection.y = 0;
         moveDirection.Normalize();
@@ -167,9 +170,9 @@ public class PlayerController : MonoBehaviour {
 
             rotationDirection *= (Mathf.Abs(_direction.x) > Mathf.Abs(_direction.z)) ? Mathf.Abs(_direction.x) : Mathf.Abs(_direction.z);
 
-            
 
-            if (MobileInputManager.instance.isGamepadConnected == false) {
+
+            /*if (MobileInputManager.instance.isGamepadConnected == false) {
                 if (MobileInputManager.instance.isAim == false && MobileInputManager.instance.OnFire() == false) {
                     rotationPivot.rotation = Quaternion.Slerp(rotationPivot.rotation, Quaternion.Euler(new Vector3(0, (Mathf.Atan2(_direction.x, _direction.z) * Mathf.Rad2Deg), 0)), rotationSpeed * Time.deltaTime);
                 }
@@ -177,11 +180,15 @@ public class PlayerController : MonoBehaviour {
                 if (ControllerManager.instance.OnAim() == false && ControllerManager.instance.OnFire() == false) {
                     rotationPivot.rotation = Quaternion.Slerp(rotationPivot.rotation, Quaternion.Euler(new Vector3(0, (Mathf.Atan2(_direction.x, _direction.z) * Mathf.Rad2Deg), 0)), rotationSpeed * Time.deltaTime);
                 }
+            }*/
+
+            if (ControllerManager.instance.OnAim() == false && ControllerManager.instance.OnFire() == false) {
+                rotationPivot.rotation = Quaternion.Slerp(rotationPivot.rotation, Quaternion.Euler(new Vector3(0, (Mathf.Atan2(_direction.x, _direction.z) * Mathf.Rad2Deg), 0)), rotationSpeed * Time.deltaTime);
             }
         }
 
         //On Aiming, Player rotation follows along with camera direction;
-        if (MobileInputManager.instance.isGamepadConnected == false) {
+        /*if (MobileInputManager.instance.isGamepadConnected == false) {
             if (MobileInputManager.instance.isAim == true || MobileInputManager.instance.OnFire() == true) {
                 rotationPivot.rotation = Quaternion.Slerp(rotationPivot.rotation, Quaternion.Euler(new Vector3(0, cameraPivot.transform.localEulerAngles.y + this.transform.eulerAngles.y, 0)), aimRotationSpeed * Time.deltaTime);
             }
@@ -189,16 +196,22 @@ public class PlayerController : MonoBehaviour {
             if (ControllerManager.instance.OnAim() == true || MobileInputManager.instance.OnFire() == true) {
                 rotationPivot.rotation = Quaternion.Slerp(rotationPivot.rotation, Quaternion.Euler(new Vector3(0, cameraPivot.transform.localEulerAngles.y + this.transform.eulerAngles.y, 0)), aimRotationSpeed * Time.deltaTime);
             }
+        }*/
+
+        if (ControllerManager.instance.OnAim()) {
+            rotationPivot.rotation = Quaternion.Slerp(rotationPivot.rotation, Quaternion.Euler(new Vector3(0, cameraPivot.transform.localEulerAngles.y + this.transform.eulerAngles.y, 0)), aimRotationSpeed * Time.deltaTime);
         }
-        
+
     }
 
     private void OnSprint() {
-        if (MobileInputManager.instance.isGamepadConnected == false) {
+        /*if (MobileInputManager.instance.isGamepadConnected == false) {
             SprintStamina(MobileInputManager.instance.OnSprint(), MobileInputManager.instance.OnJoystickMove(), characterCtr.isGrounded);
         } else {
             SprintStamina(ControllerManager.instance.OnSprint(), ControllerManager.instance.OnMove(), characterCtr.isGrounded);
-        }
+        }*/
+
+        SprintStamina(ControllerManager.instance.OnSprint(), ControllerManager.instance.OnMove(), characterCtr.isGrounded);
     }
 
     private void SprintStamina(bool _isOnSprint, Vector3 _moveDirection, bool _isOnGround) {
@@ -230,6 +243,6 @@ public class PlayerController : MonoBehaviour {
     }
 
     private void SprintLevel() {
-        GameManager.instance.staminaLevel = sprintTime / sprintTimeLimit;
+        //GameManager.instance.staminaLevel = sprintTime / sprintTimeLimit;
     }
 }
