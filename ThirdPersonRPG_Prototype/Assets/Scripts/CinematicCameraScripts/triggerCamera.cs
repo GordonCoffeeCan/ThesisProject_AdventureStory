@@ -23,7 +23,7 @@ public class triggerCamera : MonoBehaviour {
         gameManager.GetComponent<cameraActivateTrigger>().currentVirtualCamera.SetActive(false);
         gameManager.GetComponent<cameraActivateTrigger>().currentVirtualCamera = vCam;
 
-        
 
+        vCam.SetActive(true);
     }
 }
