@@ -4,38 +4,49 @@ using UnityEngine;
 using Cinemachine;
 
 public class switchCamera : MonoBehaviour {
-    //public GameObject playerCamera;
-    public GameObject mainCamera;
-    public GameObject fixedCamera;
+    public GameObject playerCamera;
+    public GameObject fixedCamera;  
 
-    private bool mainCameraActive;
-    private bool fixedCameraActive;
+    public GameObject Player;
+    private bool dynamicCamera;
+   
 
 	// Use this for initialization
 	void Start () {
+        dynamicCamera = true;
         //playerCamera.GetComponent<CinemachineBrain>().enabled = false;
-        mainCamera.SetActive(true);
-        fixedCamera.SetActive(false);
+        //camerapivot = playerCamera.transform.parent.transform;
+        Player = GameObject.Find("Player");
 
-        mainCameraActive = true;
-        fixedCameraActive = false;
+        //rotationPivotFixedCamera.SetActive(dynamicCamera);
+        
+       
 	}
 	
 	// Update is called once per frame
 	void Update () {
         if (Input.GetKeyDown(KeyCode.C)) {
-            // playerCamera.GetComponent<CinemachineBrain>().enabled = !dynamicCamera;
+            dynamicCamera =  !dynamicCamera;
+            //playerCamera.GetComponent<CinemachineBrain>().enabled = !dynamicCamera;
 
-            mainCameraActive = !mainCameraActive;
-            fixedCameraActive = !fixedCameraActive;
+            if (dynamicCamera == true) {
 
-            mainCamera.SetActive(mainCameraActive);
-            fixedCamera.SetActive(fixedCameraActive);
-            
-            
+                playerCamera.GetComponent<Camera>().depth = 0;
+                fixedCamera.GetComponent<Camera>().depth = -1;
+
+            }
+            else if (dynamicCamera == false) {
+
+                playerCamera.GetComponent<Camera>().depth = -1;
+                fixedCamera.GetComponent<Camera>().depth = 0;
+
+            }
+
+
+
         }
 
-       
+
 
     }
 }
