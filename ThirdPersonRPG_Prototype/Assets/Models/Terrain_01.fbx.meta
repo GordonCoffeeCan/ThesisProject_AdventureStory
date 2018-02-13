@@ -1,23 +1,28 @@
 fileFormatVersion: 2
-guid: 9b76bffc71a2d294e812ddf41957a250
-timeCreated: 1517522615
+guid: cf89950cce3ccad4597657af1ec17959
+timeCreated: 1518489103
 licenseType: Pro
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: Terrain_01
-    100004: Terrain_01_Collider
-    400000: //RootNode
-    400002: Terrain_01
-    400004: Terrain_01_Collider
+    100000: pCylinder1
+    100002: polySurface28
+    100004: polySurface29
+    100006: //RootNode
+    400000: pCylinder1
+    400002: polySurface28
+    400004: polySurface29
+    400006: //RootNode
     2100000: lambert1
-    2300000: Terrain_01
-    2300002: Terrain_01_Collider
-    3300000: Terrain_01
-    3300002: Terrain_01_Collider
-    4300000: Terrain_01
-    4300002: Terrain_01_Collider
+    2300000: pCylinder1
+    2300002: polySurface28
+    2300004: polySurface29
+    3300000: pCylinder1
+    3300002: polySurface28
+    3300004: polySurface29
+    4300000: polySurface28
+    4300002: polySurface29
+    4300004: pCylinder1
   externalObjects: {}
   materials:
     importMaterials: 1
