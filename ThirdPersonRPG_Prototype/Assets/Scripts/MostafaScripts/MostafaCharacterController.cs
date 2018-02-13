@@ -3,35 +3,51 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
+public class MostafaCharacterController : MonoBehaviour {
+   
 
-public class PlayerController : MonoBehaviour {
-    [SerializeField] private float walkSpeed = 2;
-    [SerializeField] private float runSpeed = 6;
-    [SerializeField] private float dashSpeed = 15;
-    [SerializeField] private float glideSpeed = 4;
-    [SerializeField] private float jumpSpeed = 8;
-    [SerializeField] private float sprintTime = 1.65f;
-    [SerializeField] private GameObject glider;
+    [SerializeField]
+    private float walkSpeed = 2;
+    [SerializeField]
+    private float runSpeed = 6;
+    [SerializeField]
+    private float dashSpeed = 15;
+    [SerializeField]
+    private float glideSpeed = 4;
+    [SerializeField]
+    private float jumpSpeed = 8;
+    [SerializeField]
+    private float sprintTime = 1.65f;
+    [SerializeField]
+    private GameObject glider;
 
     public Transform rotationPivot;
     public CameraDynamicOrbit cameraPivot;
 
-    [HideInInspector] public float popSpeed;
-    [HideInInspector] public float currentGlidingGraivity;
-    [HideInInspector] public float gravity = 20;
+    [HideInInspector]
+    public float popSpeed;
+    [HideInInspector]
+    public float currentGlidingGraivity;
+    [HideInInspector]
+    public float gravity = 20;
 
-    [HideInInspector] public bool isPopped = false;
-    [HideInInspector] public bool toggleJump = false;
-    [HideInInspector] public bool isGlide = false;
-    [HideInInspector] public bool isInMiddleAir = false;
-    [HideInInspector] public bool isDashing = false;
-    [HideInInspector] public bool isAbleToMove = true;
-    [HideInInspector] public bool isAbleToDash = false;
+    [HideInInspector]
+    public bool isPopped = false;
+    [HideInInspector]
+    public bool toggleJump = false;
+    [HideInInspector]
+    public bool isGlide = false;
+    [HideInInspector]
+    public bool isInMiddleAir = false;
+    [HideInInspector]
+    public bool isDashing = false;
+    [HideInInspector]
+    public bool isAbleToMove = true;
+    [HideInInspector]
+    public bool isAbleToDash = false;
 
-    //public Camera playerCamera;
-    [SerializeField] private Camera playerCamera;
-
-
+    
+    public Camera playerCamera;
 
     private float glidingGraivty = 2.8f;
     private float rotationSpeed = 15;
@@ -43,7 +59,7 @@ public class PlayerController : MonoBehaviour {
 
     private CharacterController characterCtr;
     private PlayerAnimation playerAnimation;
-    
+
     private Vector3 moveDirection;
     private Vector3 rotationDirection;
     private float sprintTimeLimit;
@@ -54,11 +70,11 @@ public class PlayerController : MonoBehaviour {
         moveDirection = Vector3.zero;
         sprintTimeLimit = sprintTime;
         currentGlidingGraivity = glidingGraivty;
-        
+
     }
 
     // Use this for initialization
-    void Start () {
+    void Start() {
         Cursor.lockState = CursorLockMode.Locked;
     }
 
@@ -101,8 +117,9 @@ public class PlayerController : MonoBehaviour {
             if (toggleJump) {
                 currentVerticalSpeed = jumpSpeed;
             }
-        }else {
-            if(currentSpeed > runSpeed) {
+        }
+        else {
+            if (currentSpeed > runSpeed) {
                 currentSpeed = Mathf.Lerp(currentSpeed, walkSpeed, 0.2f);
             }
         }
@@ -111,7 +128,8 @@ public class PlayerController : MonoBehaviour {
         if (ControllerManager.instance.OnGlide() && isInMiddleAir) {
             if (isGlide == false) {
                 isGlide = true;
-            } else {
+            }
+            else {
                 isGlide = false;
             }
         }
@@ -129,7 +147,8 @@ public class PlayerController : MonoBehaviour {
         if (isGlide && currentVerticalSpeed < 0) {
             currentSpeed = Mathf.Lerp(currentSpeed, glideSpeed, 0.2f);
             currentVerticalSpeed = -glidingGraivty;
-        } else {
+        }
+        else {
             currentVerticalSpeed -= gravity * Time.deltaTime;
         }
         //In the middle air------------------------------------------------------///
@@ -146,15 +165,17 @@ public class PlayerController : MonoBehaviour {
             if (Vector3.Distance(this.transform.position, _hit.point) > 3) {
                 isInMiddleAir = true;
                 playerAnimation.isHardLanding = false;
-            } else {
+            }
+            else {
                 isInMiddleAir = false;
             }
         }
 
-        if(Physics.Raycast(this.transform.position, Vector3.down, out _hitGround, 0.05f)) {
-            if(_hitGround.collider.gameObject.layer == LayerMask.NameToLayer("Spring")) {
+        if (Physics.Raycast(this.transform.position, Vector3.down, out _hitGround, 0.05f)) {
+            if (_hitGround.collider.gameObject.layer == LayerMask.NameToLayer("Spring")) {
                 playerAnimation.isHardLanding = false;
-            } else {
+            }
+            else {
                 playerAnimation.isHardLanding = true;
             }
         }
@@ -226,10 +247,12 @@ public class PlayerController : MonoBehaviour {
                 sprintTime -= Time.deltaTime;
                 currentSpeed = Mathf.Lerp(currentSpeed, runSpeed, 0.2f);
             }
-        } else {
+        }
+        else {
             if (sprintTime < sprintTimeLimit) {
                 sprintTime += Time.deltaTime;
-            } else if (sprintTime >= sprintTimeLimit) {
+            }
+            else if (sprintTime >= sprintTimeLimit) {
                 sprintTime = sprintTimeLimit;
             }
         }
@@ -240,7 +263,8 @@ public class PlayerController : MonoBehaviour {
             sprintTime = 0;
             currentSpeed = dashSpeed;
             isDashing = true;
-        } else {
+        }
+        else {
             isDashing = false;
         }
     }

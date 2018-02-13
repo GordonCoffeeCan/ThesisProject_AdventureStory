@@ -23,6 +23,8 @@ public class CameraDynamicOrbit : MonoBehaviour {
 
     //private ControllerAxis controllerAxis = new ControllerAxis();
 
+    public bool canRotate;
+
     private void Awake() {
         _camTrans = this.transform.Find("PlayerCamera");
     }
@@ -33,12 +35,14 @@ public class CameraDynamicOrbit : MonoBehaviour {
         cameraOriginalMaxDistance = cameraMaxDistance;
         _cameraVerticalOffset = 2;
         _defaultVerticalOffset = _cameraVerticalOffset;
+
+        canRotate = true;
     }
 	
 	// Update is called once per frame
 	void Update () {
         //If in Game menu panel is on, camera cannot rotate;
-        if (UIManager.isMenuPanelOn) {
+        if (UIManager.isMenuPanelOn||canRotate==false) {
             return;
         }
 
