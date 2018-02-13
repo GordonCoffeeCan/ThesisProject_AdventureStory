@@ -12,6 +12,8 @@ ModelImporter:
     100008: polySurface30
     100010: polySurface31
     100012: polySurface32
+    100014: polySurface34
+    100016: polySurface37
     400000: pCylinder1
     400002: polySurface28
     400004: polySurface29
@@ -19,6 +21,8 @@ ModelImporter:
     400008: polySurface30
     400010: polySurface31
     400012: polySurface32
+    400014: polySurface34
+    400016: polySurface37
     2100000: lambert1
     2300000: pCylinder1
     2300002: polySurface28
@@ -26,18 +30,24 @@ ModelImporter:
     2300006: polySurface30
     2300008: polySurface31
     2300010: polySurface32
+    2300012: polySurface34
+    2300014: polySurface37
     3300000: pCylinder1
     3300002: polySurface28
     3300004: polySurface29
     3300006: polySurface30
     3300008: polySurface31
     3300010: polySurface32
+    3300012: polySurface34
+    3300014: polySurface37
     4300000: polySurface28
     4300002: polySurface29
     4300004: pCylinder1
     4300006: polySurface30
     4300008: polySurface31
     4300010: polySurface32
+    4300012: polySurface34
+    4300014: polySurface37
   externalObjects: {}
   materials:
     importMaterials: 1
