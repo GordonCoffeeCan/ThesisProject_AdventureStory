@@ -89,6 +89,17 @@ ModelImporter:
     100162: WorldEdge
     100164: WorldEdge_Mesh
     100166: HumanBodyShape
+    100168: polySurface109
+    100170: polySurface83
+    100172: polySurface90
+    100174: polySurface91
+    100176: polySurface92
+    100178: polySurface93
+    100180: polySurface94
+    100182: polySurface95
+    100184: polySurface96
+    100186: polySurface98
+    100188: polySurface111
     400000: pCylinder1
     400002: polySurface28
     400004: polySurface29
@@ -173,6 +184,17 @@ ModelImporter:
     400162: WorldEdge
     400164: WorldEdge_Mesh
     400166: HumanBodyShape
+    400168: polySurface109
+    400170: polySurface83
+    400172: polySurface90
+    400174: polySurface91
+    400176: polySurface92
+    400178: polySurface93
+    400180: polySurface94
+    400182: polySurface95
+    400184: polySurface96
+    400186: polySurface98
+    400188: polySurface111
     2100000: lambert1
     2100002: Screw1_initialShadingGroup1
     2100004: BOT_Joints_Mat
@@ -258,6 +280,17 @@ ModelImporter:
     2300156: WorldEdge
     2300158: WorldEdge_Mesh
     2300160: HumanBodyShape
+    2300162: polySurface109
+    2300164: polySurface83
+    2300166: polySurface90
+    2300168: polySurface91
+    2300170: polySurface92
+    2300172: polySurface93
+    2300174: polySurface94
+    2300176: polySurface95
+    2300178: polySurface96
+    2300180: polySurface98
+    2300182: polySurface111
     3300000: pCylinder1
     3300002: polySurface28
     3300004: polySurface29
@@ -339,6 +372,17 @@ ModelImporter:
     3300156: WorldEdge
     3300158: WorldEdge_Mesh
     3300160: HumanBodyShape
+    3300162: polySurface109
+    3300164: polySurface83
+    3300166: polySurface90
+    3300168: polySurface91
+    3300170: polySurface92
+    3300172: polySurface93
+    3300174: polySurface94
+    3300176: polySurface95
+    3300178: polySurface96
+    3300180: polySurface98
+    3300182: polySurface111
     4300000: polySurface28
     4300002: polySurface29
     4300004: pCylinder1
@@ -420,6 +464,17 @@ ModelImporter:
     4300156: Water
     4300158: WorldEdge_Mesh
     4300160: HumanBodyShape
+    4300162: polySurface109
+    4300164: polySurface83
+    4300166: polySurface95
+    4300168: polySurface96
+    4300170: polySurface98
+    4300172: polySurface91
+    4300174: polySurface92
+    4300176: polySurface93
+    4300178: polySurface94
+    4300180: polySurface90
+    4300182: polySurface111
     10800000: directionalLight1
   externalObjects: {}
   materials:
