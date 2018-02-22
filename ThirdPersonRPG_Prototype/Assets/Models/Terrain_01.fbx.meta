@@ -61,6 +61,37 @@ ModelImporter:
     100110: //RootNode
     100112: Water
     100114: WorldEdge_Mesh
+    100116: pCube11
+    100118: pCube13
+    100120: pCube14
+    100122: pCube15
+    100124: pCube16
+    100126: pCube17
+    100128: pCube18
+    100130: pCube19
+    100132: pCube20
+    100134: pCube21
+    100136: pCube22
+    100138: pCube23
+    100140: pCube24
+    100142: pCube25
+    100144: pCube26
+    100146: pCube27
+    100148: pCube28
+    100150: pCube29
+    100152: pCube30
+    100154: pCube31
+    100156: pCube32
+    100158: pCube33
+    100160: pCube34
+    100162: pCube35
+    100164: pCube36
+    100166: pCube40
+    100168: polySurface119
+    100170: polySurface125
+    100172: polySurface126
+    100174: polySurface127
+    100176: Scaffold_GP
     400000: Beach_Mesh
     400002: Bridge_GP
     400004: Mountain_Mesh
@@ -119,6 +150,37 @@ ModelImporter:
     400110: //RootNode
     400112: Water
     400114: WorldEdge_Mesh
+    400116: pCube11
+    400118: pCube13
+    400120: pCube14
+    400122: pCube15
+    400124: pCube16
+    400126: pCube17
+    400128: pCube18
+    400130: pCube19
+    400132: pCube20
+    400134: pCube21
+    400136: pCube22
+    400138: pCube23
+    400140: pCube24
+    400142: pCube25
+    400144: pCube26
+    400146: pCube27
+    400148: pCube28
+    400150: pCube29
+    400152: pCube30
+    400154: pCube31
+    400156: pCube32
+    400158: pCube33
+    400160: pCube34
+    400162: pCube35
+    400164: pCube36
+    400166: pCube40
+    400168: polySurface119
+    400170: polySurface125
+    400172: polySurface126
+    400174: polySurface127
+    400176: Scaffold_GP
     2100000: lambert1
     2100002: Screw1_initialShadingGroup1
     2300000: Beach_Mesh
@@ -177,6 +239,36 @@ ModelImporter:
     2300106: Screw1:pCylinder37
     2300108: Water
     2300110: WorldEdge_Mesh
+    2300112: pCube11
+    2300114: pCube13
+    2300116: pCube14
+    2300118: pCube15
+    2300120: pCube16
+    2300122: pCube17
+    2300124: pCube18
+    2300126: pCube19
+    2300128: pCube20
+    2300130: pCube21
+    2300132: pCube22
+    2300134: pCube23
+    2300136: pCube24
+    2300138: pCube25
+    2300140: pCube26
+    2300142: pCube27
+    2300144: pCube28
+    2300146: pCube29
+    2300148: pCube30
+    2300150: pCube31
+    2300152: pCube32
+    2300154: pCube33
+    2300156: pCube34
+    2300158: pCube35
+    2300160: pCube36
+    2300162: pCube40
+    2300164: polySurface119
+    2300166: polySurface125
+    2300168: polySurface126
+    2300170: polySurface127
     3300000: Beach_Mesh
     3300002: Mountain_Mesh
     3300004: Path_Mesh
@@ -233,6 +325,36 @@ ModelImporter:
     3300106: Screw1:pCylinder37
     3300108: Water
     3300110: WorldEdge_Mesh
+    3300112: pCube11
+    3300114: pCube13
+    3300116: pCube14
+    3300118: pCube15
+    3300120: pCube16
+    3300122: pCube17
+    3300124: pCube18
+    3300126: pCube19
+    3300128: pCube20
+    3300130: pCube21
+    3300132: pCube22
+    3300134: pCube23
+    3300136: pCube24
+    3300138: pCube25
+    3300140: pCube26
+    3300142: pCube27
+    3300144: pCube28
+    3300146: pCube29
+    3300148: pCube30
+    3300150: pCube31
+    3300152: pCube32
+    3300154: pCube33
+    3300156: pCube34
+    3300158: pCube35
+    3300160: pCube36
+    3300162: pCube40
+    3300164: polySurface119
+    3300166: polySurface125
+    3300168: polySurface126
+    3300170: polySurface127
     4300000: Mountain_Mesh
     4300002: polySurface77
     4300004: polySurface75
@@ -289,6 +411,36 @@ ModelImporter:
     4300106: polySurface90
     4300108: WorldEdge_Mesh
     4300110: Water
+    4300112: polySurface127
+    4300114: polySurface125
+    4300116: polySurface119
+    4300118: polySurface126
+    4300120: pCube13
+    4300122: pCube11
+    4300124: pCube14
+    4300126: pCube15
+    4300128: pCube16
+    4300130: pCube17
+    4300132: pCube18
+    4300134: pCube19
+    4300136: pCube20
+    4300138: pCube21
+    4300140: pCube22
+    4300142: pCube23
+    4300144: pCube24
+    4300146: pCube25
+    4300148: pCube26
+    4300150: pCube27
+    4300152: pCube28
+    4300154: pCube29
+    4300156: pCube30
+    4300158: pCube31
+    4300160: pCube32
+    4300162: pCube33
+    4300164: pCube34
+    4300166: pCube35
+    4300168: pCube36
+    4300170: pCube40
     9500000: //RootNode
   externalObjects: {}
   materials:
