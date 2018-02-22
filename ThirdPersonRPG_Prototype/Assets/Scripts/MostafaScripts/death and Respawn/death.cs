@@ -22,6 +22,7 @@ public class death : MonoBehaviour {
         if (coll.transform.tag == "Player") {
 
             coll.transform.position = chk.checkPointPos;
+            Debug.Log("Die");
         }
         
     }
