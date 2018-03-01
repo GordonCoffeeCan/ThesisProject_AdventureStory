@@ -25,8 +25,16 @@ public class disableCharacterController : MonoBehaviour {
 
     void disableController() {
         player.GetComponent<PlayerController>().enabled = false;
+        //playerTposeAnimator.Play("Human_Idle");
+
+        playerTposeAnimator.SetFloat("Speed", 0);
+        playerTposeAnimator.SetBool("IsGrounded", true);
+
         playerTposeAnimator.Play("Human_Idle");
-        
+
+
+
+
     }
 
     void enableController() {

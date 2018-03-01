@@ -23,6 +23,10 @@ public class boatMoveScript : MonoBehaviour {
 
             rootPlayer.transform.parent = this.transform;
 
+            Vector3 pos = new Vector3(this.transform.position.x, this.transform.position.y + 0.52f, this.transform.position.z);
+            coll.transform.position = pos;
+
+
             anim.Play("boat_MovesToDestination");
 
         }
