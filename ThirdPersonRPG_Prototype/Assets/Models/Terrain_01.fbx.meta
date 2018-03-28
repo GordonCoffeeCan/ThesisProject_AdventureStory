@@ -100,6 +100,36 @@ ModelImporter:
     100184: polySurface96
     100186: polySurface98
     100188: polySurface111
+    100190: pCube11
+    100192: pCube13
+    100194: pCube14
+    100196: pCube15
+    100198: pCube16
+    100200: pCube17
+    100202: pCube18
+    100204: pCube19
+    100206: pCube20
+    100208: pCube21
+    100210: pCube22
+    100212: pCube23
+    100214: pCube24
+    100216: pCube25
+    100218: pCube26
+    100220: pCube27
+    100222: pCube28
+    100224: pCube29
+    100226: pCube30
+    100228: pCube31
+    100230: pCube32
+    100232: pCube33
+    100234: pCube34
+    100236: pCube35
+    100238: pCube36
+    100240: pCube40
+    100242: polySurface119
+    100244: polySurface125
+    100246: polySurface127
+    100248: Scaffold_GP
     400000: pCylinder1
     400002: polySurface28
     400004: polySurface29
@@ -195,6 +225,36 @@ ModelImporter:
     400184: polySurface96
     400186: polySurface98
     400188: polySurface111
+    400190: pCube11
+    400192: pCube13
+    400194: pCube14
+    400196: pCube15
+    400198: pCube16
+    400200: pCube17
+    400202: pCube18
+    400204: pCube19
+    400206: pCube20
+    400208: pCube21
+    400210: pCube22
+    400212: pCube23
+    400214: pCube24
+    400216: pCube25
+    400218: pCube26
+    400220: pCube27
+    400222: pCube28
+    400224: pCube29
+    400226: pCube30
+    400228: pCube31
+    400230: pCube32
+    400232: pCube33
+    400234: pCube34
+    400236: pCube35
+    400238: pCube36
+    400240: pCube40
+    400242: polySurface119
+    400244: polySurface125
+    400246: polySurface127
+    400248: Scaffold_GP
     2100000: lambert1
     2100002: Screw1_initialShadingGroup1
     2100004: BOT_Joints_Mat
@@ -291,6 +351,35 @@ ModelImporter:
     2300178: polySurface96
     2300180: polySurface98
     2300182: polySurface111
+    2300184: pCube11
+    2300186: pCube13
+    2300188: pCube14
+    2300190: pCube15
+    2300192: pCube16
+    2300194: pCube17
+    2300196: pCube18
+    2300198: pCube19
+    2300200: pCube20
+    2300202: pCube21
+    2300204: pCube22
+    2300206: pCube23
+    2300208: pCube24
+    2300210: pCube25
+    2300212: pCube26
+    2300214: pCube27
+    2300216: pCube28
+    2300218: pCube29
+    2300220: pCube30
+    2300222: pCube31
+    2300224: pCube32
+    2300226: pCube33
+    2300228: pCube34
+    2300230: pCube35
+    2300232: pCube36
+    2300234: pCube40
+    2300236: polySurface119
+    2300238: polySurface125
+    2300240: polySurface127
     3300000: pCylinder1
     3300002: polySurface28
     3300004: polySurface29
@@ -383,6 +472,35 @@ ModelImporter:
     3300178: polySurface96
     3300180: polySurface98
     3300182: polySurface111
+    3300184: pCube11
+    3300186: pCube13
+    3300188: pCube14
+    3300190: pCube15
+    3300192: pCube16
+    3300194: pCube17
+    3300196: pCube18
+    3300198: pCube19
+    3300200: pCube20
+    3300202: pCube21
+    3300204: pCube22
+    3300206: pCube23
+    3300208: pCube24
+    3300210: pCube25
+    3300212: pCube26
+    3300214: pCube27
+    3300216: pCube28
+    3300218: pCube29
+    3300220: pCube30
+    3300222: pCube31
+    3300224: pCube32
+    3300226: pCube33
+    3300228: pCube34
+    3300230: pCube35
+    3300232: pCube36
+    3300234: pCube40
+    3300236: polySurface119
+    3300238: polySurface125
+    3300240: polySurface127
     4300000: polySurface28
     4300002: polySurface29
     4300004: pCylinder1
@@ -475,6 +593,35 @@ ModelImporter:
     4300178: polySurface94
     4300180: polySurface90
     4300182: polySurface111
+    4300184: polySurface127
+    4300186: polySurface125
+    4300188: polySurface119
+    4300190: pCube13
+    4300192: pCube11
+    4300194: pCube14
+    4300196: pCube15
+    4300198: pCube16
+    4300200: pCube17
+    4300202: pCube18
+    4300204: pCube19
+    4300206: pCube20
+    4300208: pCube21
+    4300210: pCube22
+    4300212: pCube23
+    4300214: pCube24
+    4300216: pCube25
+    4300218: pCube26
+    4300220: pCube27
+    4300222: pCube28
+    4300224: pCube29
+    4300226: pCube30
+    4300228: pCube31
+    4300230: pCube32
+    4300232: pCube33
+    4300234: pCube34
+    4300236: pCube35
+    4300238: pCube36
+    4300240: pCube40
     10800000: directionalLight1
   externalObjects: {}
   materials:
