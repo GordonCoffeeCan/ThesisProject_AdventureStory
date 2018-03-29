@@ -1,17 +1,38 @@
 fileFormatVersion: 2
-guid: 2fc097dbe79eb2043964b14ee59ae87b
-timeCreated: 1522273543
+guid: 5deceed277d655548a25e3e24124e930
+timeCreated: 1522331146
 licenseType: Pro
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: Default_Mat
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Floors_1
-    4300002: Floor_1
+    100000: pPlane3
+    100002: pPlane4
+    100004: pPlane5
+    100006: pPlane6
+    100008: pPlane7
+    100010: //RootNode
+    400000: pPlane3
+    400002: pPlane4
+    400004: pPlane5
+    400006: pPlane6
+    400008: pPlane7
+    400010: //RootNode
+    2100000: lambert1
+    2300000: pPlane3
+    2300002: pPlane4
+    2300004: pPlane5
+    2300006: pPlane6
+    2300008: pPlane7
+    3300000: pPlane3
+    3300002: pPlane4
+    3300004: pPlane5
+    3300006: pPlane6
+    3300008: pPlane7
+    4300000: pPlane3
+    4300002: pPlane4
+    4300004: pPlane5
+    4300006: pPlane6
+    4300008: pPlane7
   externalObjects: {}
   materials:
     importMaterials: 1

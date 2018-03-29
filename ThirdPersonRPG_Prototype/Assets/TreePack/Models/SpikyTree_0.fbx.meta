@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 2fc097dbe79eb2043964b14ee59ae87b
-timeCreated: 1522273543
+guid: f6c4638e0663667499db44594cab9852
+timeCreated: 1522343202
 licenseType: Pro
 ModelImporter:
   serializedVersion: 22
@@ -10,8 +10,7 @@ ModelImporter:
     2100000: Default_Mat
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Floors_1
-    4300002: Floor_1
+    4300000: SpikyTree_0
   externalObjects: {}
   materials:
     importMaterials: 1

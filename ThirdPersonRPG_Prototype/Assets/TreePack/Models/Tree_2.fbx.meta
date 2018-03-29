@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 2fc097dbe79eb2043964b14ee59ae87b
-timeCreated: 1522273543
+guid: 2427d35f4a21cb24e95469b1e561f638
+timeCreated: 1522343189
 licenseType: Pro
 ModelImporter:
   serializedVersion: 22
@@ -10,8 +10,7 @@ ModelImporter:
     2100000: Default_Mat
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Floors_1
-    4300002: Floor_1
+    4300000: Tree_2
   externalObjects: {}
   materials:
     importMaterials: 1
