@@ -1,18 +1,17 @@
 fileFormatVersion: 2
-guid: aabfdcf81cac2534e9486ff4f932d427
-timeCreated: 1522282930
+guid: 8bd57b69c23002848be8cb4b9eeee466
+timeCreated: 1522298688
 licenseType: Pro
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: lambert1
+    2100000: Brick_initialShadingGroup1
     2100002: Default_Mat
     2300000: //RootNode
     3300000: //RootNode
-    4300000: pPlane75
-    4300002: Stairs_Mesh
+    4300000: Brick_5
   externalObjects: {}
   materials:
     importMaterials: 1

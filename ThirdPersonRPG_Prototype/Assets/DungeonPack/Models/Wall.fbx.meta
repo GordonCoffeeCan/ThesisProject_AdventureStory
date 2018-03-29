@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: aabfdcf81cac2534e9486ff4f932d427
-timeCreated: 1522282930
+guid: 73ec56945e365ed45b30ba841b9bc8d3
+timeCreated: 1522298687
 licenseType: Pro
 ModelImporter:
   serializedVersion: 22
@@ -11,8 +11,7 @@ ModelImporter:
     2100002: Default_Mat
     2300000: //RootNode
     3300000: //RootNode
-    4300000: pPlane75
-    4300002: Stairs_Mesh
+    4300000: Wall
   externalObjects: {}
   materials:
     importMaterials: 1
