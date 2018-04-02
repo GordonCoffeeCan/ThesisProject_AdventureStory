@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 7090565ba09b20b48b55ced3e748ad63
-timeCreated: 1522448970
+guid: 2f3a0efdd152db14caaacf4a4b7b8497
+timeCreated: 1522684048
 licenseType: Pro
 ModelImporter:
   serializedVersion: 22
@@ -10,8 +10,7 @@ ModelImporter:
     2100000: Default_Mat
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Tunals_Mesh
-    4300002: Tunal_Mesh
+    4300000: RockBlock_3_Mesh
   externalObjects: {}
   materials:
     importMaterials: 1
