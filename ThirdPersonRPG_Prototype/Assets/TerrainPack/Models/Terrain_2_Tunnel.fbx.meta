@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 2dab794aef3c9924ba84abfbf28dc172
-timeCreated: 1522699438
+guid: 7ca3b54b7c22e334e8d480d167e487d6
+timeCreated: 1522720505
 licenseType: Pro
 ModelImporter:
   serializedVersion: 22
@@ -10,7 +10,7 @@ ModelImporter:
     2100000: Default_Mat
     2300000: //RootNode
     3300000: //RootNode
-    4300000: pPlane1
+    4300000: Terrain_2_Tunnel_Mesh
   externalObjects: {}
   materials:
     importMaterials: 1
