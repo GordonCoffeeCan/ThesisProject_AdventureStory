@@ -27,7 +27,10 @@ public class boatMoveScript : MonoBehaviour {
             coll.transform.position = pos;
 
 
-            anim.Play("boat_MovesToDestination");
+            anim.SetBool("playerOnBoat", true);
+            //anim.Play("boat_MovesToDestination");
+
+            this.gameObject.GetComponent<Collider>().enabled = false;
 
         }
     }
