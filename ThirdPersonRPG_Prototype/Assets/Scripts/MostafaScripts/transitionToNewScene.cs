@@ -17,7 +17,8 @@ public class transitionToNewScene : MonoBehaviour {
     
     void OnTriggerEnter(Collider col) {
         if (col.transform.tag == "Player") {
-            SceneManager.LoadScene(1);
+            int i = SceneManager.GetActiveScene().buildIndex;
+            SceneManager.LoadScene(i+1);
         }
     }
 }
