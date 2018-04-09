@@ -8,10 +8,8 @@ public class PlayerController : MonoBehaviour {
     [SerializeField] private float walkSpeed = 2;
     [SerializeField] private float runSpeed = 6;
     [SerializeField] private float dashSpeed = 15;
-    [SerializeField] private float glideSpeed = 4;
     [SerializeField] private float jumpSpeed = 8;
     [SerializeField] private float sprintTime = 1.65f;
-    [SerializeField] private GameObject glider;
 
     public Transform rotationPivot;
     public CameraDynamicOrbit cameraPivot;
@@ -22,16 +20,13 @@ public class PlayerController : MonoBehaviour {
 
     [HideInInspector] public bool isPopped = false;
     [HideInInspector] public bool toggleJump = false;
-    [HideInInspector] public bool isGlide = false;
     [HideInInspector] public bool isInMiddleAir = false;
     [HideInInspector] public bool isDashing = false;
     [HideInInspector] public bool isAbleToMove = true;
     [HideInInspector] public bool isAbleToDash = false;
+    [HideInInspector] public bool hasTorch = false;
 
-    //public Camera playerCamera;
     [SerializeField] private Camera playerCamera;
-
-
 
     private float glidingGraivty = 2.8f;
     private float rotationSpeed = 15;
@@ -68,20 +63,19 @@ public class PlayerController : MonoBehaviour {
         if (UIManager.isMenuPanelOn) {
             return;
         }
+
+        SprintLevel();
+        DetectGround();
+        OnLightFire();
+
         if (isAbleToMove) {
             MoveCharacter();
         }
-        SprintLevel();
-        DetectGround();
+
+        playerAnimation.hasTorch = hasTorch;
     }
 
     private void MoveCharacter() {
-
-        /*if (MobileInputManager.instance.isGamepadConnected == false) {
-            moveDirection = MobileInputManager.instance.OnJoystickMove();
-        } else {
-            moveDirection = ControllerManager.instance.OnMove();
-        }*/
 
         moveDirection = ControllerManager.instance.OnMove();
 
@@ -96,7 +90,6 @@ public class PlayerController : MonoBehaviour {
             if (isAbleToDash) {
                 OnDash();
             }
-            isGlide = false;
             currentVerticalSpeed = 0;
             if (toggleJump) {
                 currentVerticalSpeed = jumpSpeed;
@@ -107,32 +100,7 @@ public class PlayerController : MonoBehaviour {
             }
         }
 
-        //Trigger glidimg-------------------------------------------------///
-        if (ControllerManager.instance.OnGlide() && isInMiddleAir) {
-            if (isGlide == false) {
-                isGlide = true;
-            } else {
-                isGlide = false;
-            }
-        }
-
-        glider.SetActive(isGlide);
-        //Trigger glidimg-------------------------------------------------///
-
-        if (isPopped) {
-            currentVerticalSpeed = popSpeed;
-            isGlide = false;
-            isPopped = false;
-        }
-
-        //In the middle air------------------------------------------------------///
-        if (isGlide && currentVerticalSpeed < 0) {
-            currentSpeed = Mathf.Lerp(currentSpeed, glideSpeed, 0.2f);
-            currentVerticalSpeed = -glidingGraivty;
-        } else {
-            currentVerticalSpeed -= gravity * Time.deltaTime;
-        }
-        //In the middle air------------------------------------------------------///
+        currentVerticalSpeed -= gravity * Time.deltaTime;
 
         moveDirection.y = currentVerticalSpeed;
         characterCtr.Move(moveDirection * Time.deltaTime);
@@ -173,46 +141,13 @@ public class PlayerController : MonoBehaviour {
 
             rotationDirection *= (Mathf.Abs(_direction.x) > Mathf.Abs(_direction.z)) ? Mathf.Abs(_direction.x) : Mathf.Abs(_direction.z);
 
-
-
-            /*if (MobileInputManager.instance.isGamepadConnected == false) {
-                if (MobileInputManager.instance.isAim == false && MobileInputManager.instance.OnFire() == false) {
-                    rotationPivot.rotation = Quaternion.Slerp(rotationPivot.rotation, Quaternion.Euler(new Vector3(0, (Mathf.Atan2(_direction.x, _direction.z) * Mathf.Rad2Deg), 0)), rotationSpeed * Time.deltaTime);
-                }
-            } else {
-                if (ControllerManager.instance.OnAim() == false && ControllerManager.instance.OnFire() == false) {
-                    rotationPivot.rotation = Quaternion.Slerp(rotationPivot.rotation, Quaternion.Euler(new Vector3(0, (Mathf.Atan2(_direction.x, _direction.z) * Mathf.Rad2Deg), 0)), rotationSpeed * Time.deltaTime);
-                }
-            }*/
-
-            if (ControllerManager.instance.OnAim() == false && ControllerManager.instance.OnFire() == false) {
+            if (ControllerManager.instance.OnAim() == false) {
                 rotationPivot.rotation = Quaternion.Slerp(rotationPivot.rotation, Quaternion.Euler(new Vector3(0, (Mathf.Atan2(_direction.x, _direction.z) * Mathf.Rad2Deg), 0)), rotationSpeed * Time.deltaTime);
             }
         }
-
-        //On Aiming, Player rotation follows along with camera direction;
-        /*if (MobileInputManager.instance.isGamepadConnected == false) {
-            if (MobileInputManager.instance.isAim == true || MobileInputManager.instance.OnFire() == true) {
-                rotationPivot.rotation = Quaternion.Slerp(rotationPivot.rotation, Quaternion.Euler(new Vector3(0, cameraPivot.transform.localEulerAngles.y + this.transform.eulerAngles.y, 0)), aimRotationSpeed * Time.deltaTime);
-            }
-        } else {
-            if (ControllerManager.instance.OnAim() == true || MobileInputManager.instance.OnFire() == true) {
-                rotationPivot.rotation = Quaternion.Slerp(rotationPivot.rotation, Quaternion.Euler(new Vector3(0, cameraPivot.transform.localEulerAngles.y + this.transform.eulerAngles.y, 0)), aimRotationSpeed * Time.deltaTime);
-            }
-        }*/
-
-        if (ControllerManager.instance.OnAim()) {
-            rotationPivot.rotation = Quaternion.Slerp(rotationPivot.rotation, Quaternion.Euler(new Vector3(0, cameraPivot.transform.localEulerAngles.y + this.transform.eulerAngles.y, 0)), aimRotationSpeed * Time.deltaTime);
-        }
-
     }
 
     private void OnSprint() {
-        /*if (MobileInputManager.instance.isGamepadConnected == false) {
-            SprintStamina(MobileInputManager.instance.OnSprint(), MobileInputManager.instance.OnJoystickMove(), characterCtr.isGrounded);
-        } else {
-            SprintStamina(ControllerManager.instance.OnSprint(), ControllerManager.instance.OnMove(), characterCtr.isGrounded);
-        }*/
 
         SprintStamina(ControllerManager.instance.OnSprint(), ControllerManager.instance.OnMove(), characterCtr.isGrounded);
     }
@@ -242,6 +177,19 @@ public class PlayerController : MonoBehaviour {
             isDashing = true;
         } else {
             isDashing = false;
+        }
+    }
+
+    private void OnLightFire() {
+        if (characterCtr.velocity.magnitude == 0 && hasTorch) {
+            if (ControllerManager.instance.OnLight()) {
+                playerAnimation.isLighting = true;
+                Debug.Log("Lighting Wood!");
+            } else {
+                playerAnimation.isLighting = false;
+            }
+
+            isAbleToMove = !ControllerManager.instance.OnLight();
         }
     }
 

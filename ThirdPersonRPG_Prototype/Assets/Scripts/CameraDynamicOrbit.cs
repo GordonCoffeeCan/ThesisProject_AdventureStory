@@ -23,8 +23,6 @@ public class CameraDynamicOrbit : MonoBehaviour {
 
     //private ControllerAxis controllerAxis = new ControllerAxis();
 
-    public bool canRotate;
-
     private void Awake() {
         _camTrans = this.transform.Find("PlayerCamera");
     }
@@ -35,14 +33,12 @@ public class CameraDynamicOrbit : MonoBehaviour {
         cameraOriginalMaxDistance = cameraMaxDistance;
         _cameraVerticalOffset = 2;
         _defaultVerticalOffset = _cameraVerticalOffset;
-
-        canRotate = true;
     }
 	
 	// Update is called once per frame
 	void Update () {
         //If in Game menu panel is on, camera cannot rotate;
-        if (UIManager.isMenuPanelOn||canRotate==false) {
+        if (UIManager.isMenuPanelOn) {
             return;
         }
 
@@ -64,32 +60,18 @@ public class CameraDynamicOrbit : MonoBehaviour {
     }
 
     private void CameraRotate() {
-        
-        /*if (MobileInputManager.instance.isGamepadConnected == false) {
-            this.transform.Rotate(-MobileInputManager.instance.OnTouchPadMove().y * cameraRotationSpeed * Time.deltaTime * 0.2f, MobileInputManager.instance.OnTouchPadMove().x * cameraRotationSpeed * Time.deltaTime * 0.2f, 0);
-        } else {
-            this.transform.Rotate(Input.GetAxis(ControllerManager.instance.cameraVerticalAxis) * cameraRotationSpeed * Time.deltaTime, Input.GetAxis(ControllerManager.instance.cameraHorizontalAxis) * cameraRotationSpeed * Time.deltaTime, 0);
-        }*/
 
         this.transform.Rotate(Input.GetAxis(ControllerManager.instance.cameraVerticalAxis) * cameraRotationSpeed * Time.deltaTime, Input.GetAxis(ControllerManager.instance.cameraHorizontalAxis) * cameraRotationSpeed * Time.deltaTime, 0);
         this.transform.localEulerAngles = new Vector3(AngleClamp(this.transform.localEulerAngles.x, verticalMinAngle, verticalMaxAngle), this.transform.localEulerAngles.y, 0);
     }
 
     private void CameraAiming() {
-        /*if (ControllerManager.instance.OnAim() || MobileInputManager.instance.isAim) {
-            _cameraHorizontalOffset = 0.3f;
-            _cameraVerticalOffset = 1.7f;
-            cameraMaxDistance = cameraAimMaxDistance;
-        } else {
-            _cameraHorizontalOffset = 0;
-            _cameraVerticalOffset = _defaultVerticalOffset;
-            cameraMaxDistance = cameraOriginalMaxDistance;
-        }*/
 
+        //Never gonna aim...
         if (ControllerManager.instance.OnAim()) {
-            _cameraHorizontalOffset = 0.3f;
+            /*_cameraHorizontalOffset = 0.3f;
             _cameraVerticalOffset = 1.7f;
-            cameraMaxDistance = cameraAimMaxDistance;
+            cameraMaxDistance = cameraAimMaxDistance;*/
         } else {
             _cameraHorizontalOffset = 0;
             _cameraVerticalOffset = _defaultVerticalOffset;
