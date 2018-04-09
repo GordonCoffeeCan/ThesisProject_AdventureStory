@@ -206,7 +206,7 @@ public class MostafaCharacterController : MonoBehaviour {
                 }
             }*/
 
-            if (ControllerManager.instance.OnAim() == false && ControllerManager.instance.OnFire() == false) {
+            if (ControllerManager.instance.OnAim() == false && ControllerManager.instance.OnLight() == false) {
                 rotationPivot.rotation = Quaternion.Slerp(rotationPivot.rotation, Quaternion.Euler(new Vector3(0, (Mathf.Atan2(_direction.x, _direction.z) * Mathf.Rad2Deg), 0)), rotationSpeed * Time.deltaTime);
             }
         }
