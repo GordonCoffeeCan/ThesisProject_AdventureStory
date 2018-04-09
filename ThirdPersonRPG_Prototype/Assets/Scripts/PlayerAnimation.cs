@@ -35,6 +35,10 @@ public class PlayerAnimation : MonoBehaviour {
 
     [HideInInspector]
     public bool isHardLanding = false;
+    [HideInInspector]
+    public bool isLighting = false;
+    [HideInInspector]
+    public bool hasTorch = false;
 
     private void Awake() {
         characterCtr = this.GetComponent<CharacterController>();
@@ -47,7 +51,7 @@ public class PlayerAnimation : MonoBehaviour {
             Debug.LogError("No player animator reference!");
             return;
         }
-
+        //playerAnimator.SetLayerWeight(1, 1);
         currentIdleChangeTimer = idleChangeTimer;
     }
 
@@ -56,6 +60,11 @@ public class PlayerAnimation : MonoBehaviour {
         ChangeIdleBlend();
         ChangeMotion();
         currentAnimatorState = playerAnimator.GetCurrentAnimatorStateInfo(0);
+        if (hasTorch) {
+            playerAnimator.SetLayerWeight(1, 1);
+        } else {
+            playerAnimator.SetLayerWeight(1, 0);
+        }
     }
 
     private void ChangeIdleBlend() {
@@ -80,7 +89,6 @@ public class PlayerAnimation : MonoBehaviour {
         playerAnimator.SetFloat("Speed", currentLocomotionSpeed);
         playerAnimator.SetBool("IsGrounded", characterCtr.isGrounded);
         playerAnimator.SetBool("InAir", playerController.isInMiddleAir);
-        playerAnimator.SetBool("Gliding", playerController.isGlide);
         playerAnimator.SetBool("HardLanding", isHardLanding);
 
         if (currentAnimatorState.fullPathHash == runToStopState || currentAnimatorState.fullPathHash == hardLandingState) {
@@ -104,13 +112,6 @@ public class PlayerAnimation : MonoBehaviour {
         //Only idle state will trigger jump action when press jump button;
 
         if (!playerAnimator.IsInTransition(0) && currentAnimatorState.fullPathHash != fallingToRunningState) {
-            /*if (MobileInputManager.instance.isGamepadConnected == false) {
-
-            }
-            else {
-                playerAnimator.SetBool("Jump", ControllerManager.instance.OnJump());
-                playerController.toggleJump = ControllerManager.instance.OnJump();
-            }*/
 
             playerAnimator.SetBool("Jump", ControllerManager.instance.OnJump());
             playerController.toggleJump = ControllerManager.instance.OnJump();
@@ -124,19 +125,8 @@ public class PlayerAnimation : MonoBehaviour {
             }
         }
         //Play Dash animation only player animator is in Jogging state and triggered dashing in PlayerController;
+
+        playerAnimator.SetBool("IsLighting", isLighting);
+
     }
-
-   /*private float LeftToeAndRightToeOffset() {
-        float _idle2Left = 0;
-
-        if (leftLocator != null && rightLocator != null) {
-
-            _idle2Left = Vector3.Angle((rightLocator.position - leftLocator.position), this.transform.forward);
-
-        }
-        else {
-            Debug.LogError("No left or right locator reference!");
-        }
-        return _idle2Left;
-    }*/
 }
