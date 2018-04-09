@@ -31,7 +31,7 @@ public class switchCamera : MonoBehaviour {
         if (Input.GetButtonDown("camera")) {
             dynamicCamera =  !dynamicCamera;
 
-            bool canRotate = Player.transform.Find("CameraPivot").gameObject.GetComponent<CameraDynamicOrbit>().canRotate;
+            //bool canRotate = Player.transform.Find("CameraPivot").gameObject.GetComponent<CameraDynamicOrbit>().canRotate;
             //playerCamera.GetComponent<CinemachineBrain>().enabled = !dynamicCamera;
 
             if (dynamicCamera == true) {
