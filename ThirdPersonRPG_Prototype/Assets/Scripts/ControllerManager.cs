@@ -10,8 +10,8 @@ public class ControllerManager : MonoBehaviour {
     public string jumpButton;
     public string cameraHorizontalAxis;
     public string cameraVerticalAxis;
-    public string fireButton;
-    public string fireTrigger;
+    public string lightButton;
+    public string lightTrigger;
     public string aimButton;
     public string aimTrigger;
     public string sprintButton;
@@ -30,8 +30,8 @@ public class ControllerManager : MonoBehaviour {
         cameraHorizontalAxis = "CamHorizontal";
         cameraVerticalAxis = "CamVertical";
 
-        fireButton = "Fire";
-        fireTrigger = "Right_Trigger";
+        lightButton = "Fire";
+        lightTrigger = "Right_Trigger";
         aimButton = "Aim";
         aimTrigger = "Left_Trigger";
 
@@ -40,31 +40,6 @@ public class ControllerManager : MonoBehaviour {
 
         MenuButton = "Menu";
         BackButton = "Back";
-
-#if UNITY_EDITOR
-
-#endif
-
-#if UNITY_STANDALONE
-        
-#endif
-
-#if UNITY_ANDROID
-        fireButton = "AndroidFakeFire";
-        aimButton = "AndroidFakeAim";
-        aimTrigger = "L_2_Aim";
-        fireTrigger = "R_2_Fire";
-        cameraHorizontalAxis = "Android_R_Stick_H";
-        cameraVerticalAxis = "Android_R_Stick_V";
-        sprintButton = "Android_Sprint";
-        MenuButton = "Android_Menu";
-        BackButton = "Android_Back";
-#endif
-
-#if UNITY_IOS
-        fireButton = "AndroidFakeFire";
-        aimButton = "AndroidFakeAim";
-#endif
     }
 
     public Vector3 OnMove() {
@@ -95,8 +70,8 @@ public class ControllerManager : MonoBehaviour {
         return Input.GetButtonDown(dashButton);
     }
 
-    public bool OnFire() {
-        return (Input.GetButton(fireButton) || Input.GetAxis(fireTrigger) > 0.2f);
+    public bool OnLight() {
+        return (Input.GetButton(lightButton) || Input.GetAxis(lightTrigger) > 0.2f);
     }
 
     public bool OnMenu() {
