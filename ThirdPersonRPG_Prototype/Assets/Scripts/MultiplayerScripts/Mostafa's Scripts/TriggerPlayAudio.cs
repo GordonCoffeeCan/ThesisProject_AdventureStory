@@ -35,7 +35,7 @@ public class TriggerPlayAudio : MonoBehaviour {
        
 	}
 
-    private void OnTriggerEnter(Collider _col) {
+    private void OnTriggerStay(Collider _col) {
         if (hasTriggered == false) {
             if (_col.transform.tag == "Player") {
                 
