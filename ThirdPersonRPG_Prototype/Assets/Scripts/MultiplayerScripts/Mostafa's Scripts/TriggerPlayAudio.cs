@@ -22,7 +22,7 @@ public class TriggerPlayAudio : MonoBehaviour {
 
         targetSubtitleText = GameObject.Find("SubtitleText").GetComponent<Text>();
 
-        Debug.Log(subtitleText);
+        
     }
 	
 	// Update is called once per frame
@@ -38,7 +38,7 @@ public class TriggerPlayAudio : MonoBehaviour {
     private void OnTriggerEnter(Collider _col) {
         if (hasTriggered == false) {
             if (_col.transform.tag == "Player") {
-                Debug.Log("Player ENtered");
+                
                 
                 audio.clip = this.GetComponent<AudioSource>().clip;
                 audio.Play();
@@ -49,7 +49,7 @@ public class TriggerPlayAudio : MonoBehaviour {
 
                 em.rateOverTime = 0;
 
-                Debug.Log(subtitleText);
+               
                 targetSubtitleText.text = "";
                 targetSubtitleText.text += subtitleText;
 
