@@ -34,7 +34,7 @@ public class flammable : MonoBehaviour {
 
         if (canSpreadFire == true) {
             
-            Invoke("FireSpread", 2);
+            Invoke("FireSpread", 0.5f);
         }
     }
 
@@ -58,7 +58,7 @@ public class flammable : MonoBehaviour {
         var em = part.emission;
 
         em.rateOverTime = 0;
-        Invoke("FinishBurn", 1);
+        Invoke("FinishBurn", 1.25f);
     }
 
     private void FireSpread() {
