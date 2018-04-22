@@ -58,7 +58,7 @@ public class flammable : MonoBehaviour {
         var em = part.emission;
 
         em.rateOverTime = 0;
-        Invoke("FinishBurn", 0.5f);
+        Invoke("FinishBurn", 1);
     }
 
     private void FireSpread() {
