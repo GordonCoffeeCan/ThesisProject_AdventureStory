@@ -5,16 +5,21 @@ using UnityEngine;
 public class flammable : MonoBehaviour {
     public bool isFlammable;
     private ParticleSystem part;
+  
     // Use this for initialization
 
     public bool canBurnUp;
     public bool canSpreadFire;
+    public bool onFire;
 
 	void Start () {
+        onFire = false;
 
         part = this.transform.Find("fire").GetComponent<ParticleSystem>();
+       
         isFlammable = true;
 
+    
         var em = part.emission;
 
         em.rateOverTime = 0;
@@ -27,6 +32,8 @@ public class flammable : MonoBehaviour {
 
      void OnTriggerEnter(Collider col) {
         if (col.gameObject.tag == "Fire") {
+
+            onFire = true;
             Debug.Log("This log is burning");
             Burn();
 
@@ -41,6 +48,7 @@ public class flammable : MonoBehaviour {
     public void Burn() {
 
         var em = part.emission;
+        
 
         em.rateOverTime = 10;
         if (canBurnUp == true) {

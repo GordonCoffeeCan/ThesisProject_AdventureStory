@@ -19,10 +19,15 @@ public class torchManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
         if (isHoldingTorch == true) {
             playerController.hasTorch = true;
-       
-
         }
+        else {
+            playerController.hasTorch = false;
+            
+        }
+
+       
     }
 }
