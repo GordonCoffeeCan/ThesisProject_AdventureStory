@@ -5,6 +5,7 @@ using UnityEngine;
 public class killScript : MonoBehaviour {
 
     public checkPointManager chk;
+    public GameObject endPanel;
 
     [SerializeField]
     private GameObject playerChar;
@@ -17,6 +18,7 @@ public class killScript : MonoBehaviour {
 
     // Use this for initialization
     void Start() {
+        endPanel = GameObject.Find("EndPanel");
 
         chk = GameObject.Find("GameManager").GetComponent<checkPointManager>();
 
@@ -61,6 +63,8 @@ public class killScript : MonoBehaviour {
         deathEffect.Play();
         Debug.Log("Die");
 
+        endPanel.GetComponent<UICrossFade>().m_Fading = true;
+
     }
 
     public void respawn() {
@@ -68,7 +72,10 @@ public class killScript : MonoBehaviour {
         playerRotationPivot.SetActive(true);
         //deathEffect.gameObject.SetActive(false);
         playerChar.transform.position = chk.checkPointPos;
-        
+        playerChar.transform.rotation = chk.checkPointRot;
+        GameObject.Find("CameraPivot").transform.rotation = chk.cameraRot;
+
+        endPanel.GetComponent<UICrossFade>().m_Fading = false;
         hasDied = false;
 
     }

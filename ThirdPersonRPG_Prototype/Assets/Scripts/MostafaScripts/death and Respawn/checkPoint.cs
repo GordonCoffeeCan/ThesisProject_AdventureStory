@@ -18,6 +18,8 @@ public class checkPoint : MonoBehaviour {
         if (coll.transform.tag == "Player") {
 
             chk.checkPointPos = coll.transform.position;
+            chk.checkPointRot = coll.transform.rotation;
+            chk.cameraRot = GameObject.Find("CameraPivot").transform.rotation;
         }
     }
 }

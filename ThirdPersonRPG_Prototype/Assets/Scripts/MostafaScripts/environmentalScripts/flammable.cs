@@ -53,7 +53,7 @@ public class flammable : MonoBehaviour {
 
         var em = part.emission;
 
-        float i = Random.Range(0.01f, 0.02f);
+        float i = Random.Range(0.02f, 0.05f);
         AudioSource.PlayClipAtPoint(clip, this.transform.position,i);
 
         em.rateOverTime = 10;

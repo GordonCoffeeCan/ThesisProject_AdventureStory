@@ -13,8 +13,7 @@ public class TriggerPlayAudio : MonoBehaviour {
 
     private Text targetSubtitleText;
 
-    public List<AudioClip> audioClipList;
-    public List<string> subtitleList;
+
 
 
 	// Use this for initialization
@@ -46,7 +45,7 @@ public class TriggerPlayAudio : MonoBehaviour {
 
                 audio.clip = this.GetComponent<AudioSource>().clip;
 
-                audioClipList.Add(audio.clip);
+                
 
                 audio.Play();
 

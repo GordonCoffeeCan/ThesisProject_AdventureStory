@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class death : MonoBehaviour {
     public checkPointManager chk;
-	// Use this for initialization
-	void Start () {
+    public GameObject endPanel;
+    // Use this for initialization
+    void Start () {
 
         chk = GameObject.Find("GameManager").GetComponent<checkPointManager>();
 		
@@ -22,6 +23,7 @@ public class death : MonoBehaviour {
         if (coll.transform.tag == "Player") {
 
             coll.transform.position = chk.checkPointPos;
+            coll.transform.rotation = chk.checkPointRot;
             Debug.Log("Die");
         }
         
