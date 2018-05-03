@@ -20,5 +20,7 @@ public class pressAnyKeyToStart : MonoBehaviour {
     public void sceneChange() {
         int i = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(i + 1);
+
+        this.GetComponent<UICrossFade>().m_Fading = true;
     }
 }
