@@ -9,10 +9,14 @@ public class torchManager : MonoBehaviour {
 
     public bool isHoldingTorch;
 
+    private GameObject playerTorch;
+
 	// Use this for initialization
 	void Start () {
         player = GameObject.Find("Player");
         playerController = player.GetComponent<PlayerController>();
+
+        playerTorch = GameObject.Find("playerTorch");
         
 
 	}
@@ -22,10 +26,11 @@ public class torchManager : MonoBehaviour {
 
         if (isHoldingTorch == true) {
             playerController.hasTorch = true;
+            playerTorch.SetActive(true);
         }
         else {
             playerController.hasTorch = false;
-            
+            playerTorch.SetActive(false);
         }
 
        

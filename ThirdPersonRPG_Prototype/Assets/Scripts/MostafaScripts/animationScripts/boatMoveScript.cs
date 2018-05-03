@@ -7,9 +7,13 @@ public class boatMoveScript : MonoBehaviour {
     private GameObject rootPlayer;
     private Animator anim;
 
+    private bool hasFinished;
+
     // Use this for initialization
     void Start() {
         anim = GetComponent<Animator>();
+
+        hasFinished = false;
     }
 
     // Update is called once per frame
@@ -40,6 +44,12 @@ public class boatMoveScript : MonoBehaviour {
     void OnTriggerExit(Collider coll) {
         if (coll.transform.tag == "Player") {
             rootPlayer.transform.parent = null;
+
+        }
+    }
+
+    void OnTriggerStay(Collider coll) {
+        if (hasFinished == false) {
 
         }
     }

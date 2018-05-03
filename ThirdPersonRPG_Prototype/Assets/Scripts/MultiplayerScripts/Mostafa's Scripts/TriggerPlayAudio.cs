@@ -13,7 +13,8 @@ public class TriggerPlayAudio : MonoBehaviour {
 
     private Text targetSubtitleText;
 
-    public AudioClip[] audioArray;
+    public List<AudioClip> audioClipList;
+    public List<string> subtitleList;
 
 
 	// Use this for initialization
@@ -40,10 +41,16 @@ public class TriggerPlayAudio : MonoBehaviour {
     private void OnTriggerStay(Collider _col) {
         if (hasTriggered == false) {
             if (_col.transform.tag == "Player") {
+
                 
-                
+
                 audio.clip = this.GetComponent<AudioSource>().clip;
+
+                audioClipList.Add(audio.clip);
+
                 audio.Play();
+
+
                 hasTriggered = true;
 
                 ParticleSystem part = this.transform.Find("fireFlyEffect").GetComponent<ParticleSystem>();

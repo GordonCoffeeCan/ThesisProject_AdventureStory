@@ -69,6 +69,7 @@ public class flammable : MonoBehaviour {
 
     private void BurnUp() {
         this.GetComponent<Renderer>().enabled = false;
+        this.GetComponent<Collider>().enabled = false;
         var em = part.emission;
 
         em.rateOverTime = 0;
