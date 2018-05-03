@@ -12,6 +12,8 @@ public class flammable : MonoBehaviour {
     public bool canSpreadFire;
     public bool onFire;
 
+    public AudioClip clip;
+
 	void Start () {
         onFire = false;
 
@@ -23,6 +25,8 @@ public class flammable : MonoBehaviour {
         var em = part.emission;
 
         em.rateOverTime = 0;
+
+        clip = GameObject.Find("fireAudioHolder").GetComponent<AudioSource>().clip;
     }
 	
 	// Update is called once per frame
@@ -48,7 +52,9 @@ public class flammable : MonoBehaviour {
     public void Burn() {
 
         var em = part.emission;
-        
+
+        float i = Random.Range(0.01f, 0.02f);
+        AudioSource.PlayClipAtPoint(clip, this.transform.position,i);
 
         em.rateOverTime = 10;
         if (canBurnUp == true) {

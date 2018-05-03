@@ -13,6 +13,8 @@ public class TriggerPlayAudio : MonoBehaviour {
 
     private Text targetSubtitleText;
 
+    public AudioClip[] audioArray;
+
 
 	// Use this for initialization
 	void Start () {
@@ -59,4 +61,5 @@ public class TriggerPlayAudio : MonoBehaviour {
             }
         }
     }
+
 }
