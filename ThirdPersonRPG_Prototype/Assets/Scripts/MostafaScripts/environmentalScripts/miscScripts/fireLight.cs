@@ -5,6 +5,7 @@ using UnityEngine;
 public class fireLight : MonoBehaviour {
     private ParticleSystem part;
 
+
     private float luminosity;
 
     // Use this for initialization
@@ -32,6 +33,8 @@ public class fireLight : MonoBehaviour {
 
         while(this.GetComponent<Light>().intensity < luminosity) {
             this.GetComponent<Light>().intensity = this.GetComponent<Light>().intensity + (Time.deltaTime*1);
+
+            //this.GetComponent<Light>().intensity = Mathf.Lerp(this.GetComponent<Light>().intensity, luminosity, Time.deltaTime);
         }
          
     }
