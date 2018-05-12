@@ -44,7 +44,7 @@ public class PauseMenu : MonoBehaviour {
 
     public void MainMenu() {
         Pause();
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("splashScreen");
     }
 
     public void Restart() {
@@ -55,6 +55,7 @@ public class PauseMenu : MonoBehaviour {
 
     public void Quit() {
         Pause();
-        SceneManager.LoadScene(0);
+        Application.Quit();
+        //SceneManager.LoadScene(0);
     }
 }
