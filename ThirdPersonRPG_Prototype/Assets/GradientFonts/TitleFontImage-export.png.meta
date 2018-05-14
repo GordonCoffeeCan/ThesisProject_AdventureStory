@@ -1,0 +1,1118 @@
+fileFormatVersion: 2
+guid: 71dc89524eab1de44a260e72a6ccbb3d
+timeCreated: 1526337494
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: TitleFont_0
+    21300002: TitleFont_1
+    21300004: TitleFont_2
+    21300006: TitleFont_3
+    21300008: TitleFont_4
+    21300010: TitleFont_5
+    21300012: TitleFont_6
+    21300014: TitleFont_7
+    21300016: TitleFont_8
+    21300018: TitleFont_9
+    21300020: TitleFont_10
+    21300022: TitleFont_11
+    21300024: TitleFont_12
+    21300026: TitleFont_13
+    21300028: TitleFont_14
+    21300030: TitleFont_15
+    21300032: TitleFont_17
+    21300034: TitleFont_18
+    21300036: TitleFont_19
+    21300038: TitleFont_20
+    21300040: TitleFont_21
+    21300042: TitleFont_22
+    21300044: TitleFont_24
+    21300046: TitleFont_25
+    21300048: TitleFont_26
+    21300050: TitleFont_27
+    21300052: TitleFont_28
+    21300054: TitleFont_29
+    21300056: TitleFont_30
+    21300058: TitleFont_31
+    21300060: TitleFont_32
+    21300062: TitleFont_33
+    21300064: TitleFont_34
+    21300066: TitleFont_38
+    21300068: TitleFont_39
+    21300070: TitleFont_40
+    21300072: TitleFont_41
+    21300074: TitleFont_44
+    21300076: TitleFont_45
+    21300078: TitleFont_46
+    21300080: TitleFont_47
+    21300082: TitleFont_48
+    21300084: TitleFont_49
+    21300086: TitleFont_50
+    21300088: TitleFont_51
+    21300090: TitleFont_52
+    21300092: TitleFont_53
+    21300094: TitleFont_55
+    21300096: TitleFont_56
+    21300098: TitleFont_57
+    21300100: TitleFont_58
+    21300102: TitleFont_60
+    21300104: TitleFont_61
+    21300106: TitleFont_16
+    21300108: TitleFont_23
+    21300110: TitleFont_35
+    21300112: TitleFont_36
+    21300114: TitleFont_37
+    21300116: TitleFont_42
+    21300118: TitleFont_43
+    21300120: TitleFont_54
+    21300122: TitleFont_59
+    21300124: TitleFont_62
+    21300126: TitleFont_63
+    21300128: TitleFont_64
+    21300130: UIFont_0
+    21300132: UIFont_1
+    21300134: UIFont_2
+    21300136: UIFont_3
+    21300138: UIFont_4
+    21300140: UIFont_5
+    21300142: UIFont_6
+    21300144: UIFont_7
+    21300146: UIFont_8
+    21300148: UIFont_9
+    21300150: UIFont_10
+    21300152: UIFont_11
+    21300154: UIFont_12
+    21300156: UIFont_13
+    21300158: UIFont_14
+    21300160: UIFont_15
+    21300162: UIFont_16
+    21300164: UIFont_17
+    21300166: UIFont_18
+    21300168: UIFont_19
+    21300170: UIFont_20
+    21300172: UIFont_21
+    21300174: UIFont_22
+    21300176: UIFont_23
+    21300178: UIFont_24
+    21300180: UIFont_25
+    21300182: UIFont_26
+    21300184: UIFont_27
+    21300186: UIFont_28
+    21300188: UIFont_29
+    21300190: UIFont_30
+    21300192: UIFont_31
+    21300194: UIFont_32
+    21300196: UIFont_33
+    21300198: UIFont_34
+    21300200: UIFont_35
+    21300202: UIFont_36
+    21300204: UIFont_37
+    21300206: UIFont_38
+    21300208: UIFont_39
+    21300210: UIFont_40
+    21300212: UIFont_41
+    21300214: UIFont_42
+    21300216: UIFont_43
+    21300218: UIFont_44
+    21300220: UIFont_45
+    21300222: UIFont_46
+    21300224: UIFont_47
+    21300226: UIFont_48
+    21300228: UIFont_49
+    21300230: UIFont_50
+    21300232: UIFont_51
+    21300234: UIFont_52
+    21300236: UIFont_53
+    21300238: UIFont_54
+    21300240: UIFont_55
+    21300242: UIFont_56
+    21300244: UIFont_57
+    21300246: UIFont_58
+    21300248: UIFont_59
+    21300250: UIFont_60
+    21300252: UIFont_61
+    21300254: UIFont_62
+    21300256: UIFont_63
+    21300258: UIFont_64
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TitleFont_0
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 141
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 36
+        width: 31
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_2
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 169
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_3
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 128
+        width: 23
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_4
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 49
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_5
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 137
+        width: 19
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_6
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 17
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_7
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 33
+        width: 25
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_8
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 28
+        width: 10
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_9
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 194
+        width: 28
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_10
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 29
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_11
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 103
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 104
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_13
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 136
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_14
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 102
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_15
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 195
+        width: 25
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_16
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 1
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_17
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 3
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_18
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 111
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_19
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 175
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_20
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 168
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_21
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 67
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9
+        width: 30
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 199
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_24
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 30
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_25
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 142
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_26
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 108
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 70
+        width: 31
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_28
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 115
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_29
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 200
+        width: 23
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_30
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 89
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_31
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 144
+        width: 18
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_32
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 202
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_33
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 33
+        width: 25
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_34
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 28
+        width: 10
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_35
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 97
+        width: 28
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_36
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 162
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_37
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 62
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_38
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 134
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_39
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 75
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_40
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 63
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_41
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 195
+        width: 25
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_42
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 1
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_43
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 2
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_44
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 168
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_45
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 104
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_46
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 71
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_47
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 28
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_48
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 137
+        width: 30
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 164
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_50
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 24
+        width: 30
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_51
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 169
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_52
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 104
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_53
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 182
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_54
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 208
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_55
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 156
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_56
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 208
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_57
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 78
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_58
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 52
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_59
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 26
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_60
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 130
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_61
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 182
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_62
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 12
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 233
+        width: 0
+        height: 0
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: TitleFont_64
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 233
+        width: 0
+        height: 0
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
