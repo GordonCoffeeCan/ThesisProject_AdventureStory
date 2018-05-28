@@ -22,14 +22,24 @@ public class disableCharacterController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        bool idle = false;
         if (playerDisabled == true) {
+
+            playerTposeAnimator.StopPlayback();
+            Debug.Log("characterDisabled");
+            if (idle == false) {
+                playerTposeAnimator.Play("Human_Idle",1,0.0f);
+                idle = true;
+            }
             playerTposeAnimator.SetFloat("Speed", 0);
             playerTposeAnimator.SetBool("IsGrounded", true);
 
-            playerTposeAnimator.Play("Human_Idle");
+           // playerTposeAnimator.Play("Human_Idle");
             playerTposeAnimator.SetBool("Jump", false);
 
             player.GetComponent<PlayerController>().enabled = false;
+
+            
         }
 		
 	}
@@ -37,20 +47,30 @@ public class disableCharacterController : MonoBehaviour {
     void disableController() {
         //player.GetComponent<PlayerController>().enabled = true;
         //playerTposeAnimator.Play("Human_Idle");
-        playerDisabled = true;  
+        Debug.Log("BoatAnimated");
+        playerTposeAnimator.Play("Human_Idle");
+      
+        playerDisabled = true;
+
+        playerTposeAnimator.StopPlayback();
 
         playerTposeAnimator.SetFloat("Speed", 0);
         playerTposeAnimator.SetBool("IsGrounded", true);
 
         playerTposeAnimator.Play("Human_Idle");
+       
 
-        player.GetComponent<PlayerController>().enabled = false;
+        //player.GetComponent<PlayerController>().enabled = false;
 
-
+        Debug.Log("BoatAnimated2");
     }
 
     void enableController() {
         playerDisabled = false;
         player.GetComponent<PlayerController>().enabled = true;
+    }
+
+    void hardlanding() {
+        playerTposeAnimator.Play("HardLanding");
     }
 }
